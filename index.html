@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verrassing!</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0e68c;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+            font-size: 2.5em;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 1em;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+        }
+        .yes-btn {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .no-btn {
+            background-color: #f44336;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Is Floor lesbisch in Nederland?</h1>
+    <button class="yes-btn" onclick="showCorrect()">Ja</button>
+    <button class="no-btn" onclick="showIncorrect()">Nee</button>
+    
+    <p id="message" style="font-size: 1.5em; color: #333; margin-top: 20px;"></p>
+
+    <script>
+        function showCorrect() {
+            document.getElementById("message").innerText = "Juist! Floor is lesbisch!";
+        }
+
+        function showIncorrect() {
+            document.getElementById("message").innerText = "Fout! Probeer het opnieuw!";
+        }
+    </script>
+</body>
+</html>
